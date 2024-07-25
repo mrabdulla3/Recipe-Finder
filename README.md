@@ -14,7 +14,6 @@ Detailed Instructions: Each recipe comes with step-by-step instructions, a compr
 Responsive Layout: Enjoy a seamless browsing experience on any device, from desktops to mobile phones.
 
 Screenshot: 
-
 ![IMG_20240726_032007](https://github.com/user-attachments/assets/a8b84090-a5aa-45d7-91d0-fab748b182e6)
 
 

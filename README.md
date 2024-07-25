@@ -15,7 +15,7 @@ Responsive Layout: Enjoy a seamless browsing experience on any device, from desk
 
 Screenshot: 
 
-![IMG_20240726_031623](https://github.com/user-attachments/assets/0887bc71-24a7-4a60-be88-b3df6f2a7be5)
+![IMG_20240726_032007](https://github.com/user-attachments/assets/a8b84090-a5aa-45d7-91d0-fab748b182e6)
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

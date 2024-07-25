@@ -13,6 +13,11 @@ User-Friendly Design: Our website's intuitive layout makes it simple to navigate
 Detailed Instructions: Each recipe comes with step-by-step instructions, a comprehensive ingredient list, and helpful cooking tips.
 Responsive Layout: Enjoy a seamless browsing experience on any device, from desktops to mobile phones.
 
+Screenshot: 
+
+![IMG_20240726_031623](https://github.com/user-attachments/assets/0887bc71-24a7-4a60-be88-b3df6f2a7be5)
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import '../App.css';
-import { Link,useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [searchInput, setSearchInput] = useState('');
@@ -19,7 +19,7 @@ const Navbar = () => {
   const handleSearchSubmit = (event) => {
     event.preventDefault();
     navigate(`/search/${searchInput}`);
-   // console.log('Search query:', searchInput);
+    // console.log('Search query:', searchInput);
     // Implement the logic to handle the search query here
   };
 
@@ -54,15 +54,15 @@ const Navbar = () => {
                   <li>British</li></Link>
                 <Link to={`/category/thai`} className='dropdown-links'>
                   <li>Thai</li></Link>
-                  <Link to={`/category/canadian`} className='dropdown-links'>
+                <Link to={`/category/canadian`} className='dropdown-links'>
                   <li>Canadian</li></Link>
-                  <Link to={`/category/italian`} className='dropdown-links'>
+                <Link to={`/category/italian`} className='dropdown-links'>
                   <li>Italian</li></Link>
-                  <Link to={`/category/japanese`} className='dropdown-links'>
+                <Link to={`/category/japanese`} className='dropdown-links'>
                   <li>Japanese</li></Link>
-                  <Link to={`/category/turkish`} className='dropdown-links'>
+                <Link to={`/category/turkish`} className='dropdown-links'>
                   <li>Turkish</li></Link>
-                  <Link to={`/category/russian`} className='dropdown-links'>
+                <Link to={`/category/russian`} className='dropdown-links'>
                   <li>Russian</li></Link>
               </ul>
             )}

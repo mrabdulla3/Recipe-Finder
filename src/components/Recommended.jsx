@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
-
+import '../App.css'
 const Recommended = () => {
 
     const [data, setData] = useState([]);
@@ -24,19 +24,37 @@ const Recommended = () => {
     }, [])
 
     var settings = {
-        //dots: true,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        pauseOnHover: true
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 1024, 
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768, 
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 480, 
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     };
 
     return (
         <>
             <div className="recommend " style={{
-                height: '50vh',
                 width: '90%',
                 margin: 'auto'
             }
@@ -48,8 +66,8 @@ const Recommended = () => {
                     {data.map((d) => {
                         return (
                             <Link to={`/${d.idMeal}`}>
-                                <div className='slider'>
-                                    <img src={d.strMealThumb} alt="" style={{ width: '18rem', height: '16rem', borderRadius: '20px' }} />
+                                <div className='slider ' style={{ padding: '0 10px 0 0' }}>
+                                    <img src={d.strMealThumb} alt="" style={{borderRadius: '20px' }} />
                                 </div>
                             </Link>
                         )

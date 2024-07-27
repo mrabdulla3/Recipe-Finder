@@ -13,9 +13,9 @@ function App() {
         <Route path="/" element={
           <>
             <NavBar />
-            <h2 className='fw-bold fs-4 text-start mx-5'>Recommended Recipes</h2>
+            <h2 className='fw-bold fs-4 text-start mx-5' style={{ fontFamily: 'Times New Roman'}}>Recommended Recipes</h2>
             <Recommended />
-            <h2 className='fw-bold fs-4 text-start mx-5'>All Recipes</h2>
+            <h2 className='fw-bold fs-4 text-start mx-5' style={{ fontFamily: 'Times New Roman'}}>All Recipes</h2>
             <Home />
           </>
         } />

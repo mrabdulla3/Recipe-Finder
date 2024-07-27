@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import {Link, useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import Navbar from './NavBar';
 
 const Category = () => {
-    const {name} = useParams();
+    const { name } = useParams();
     //console.log(useParams())
 
     const [data, setData] = useState([]);
@@ -15,8 +15,8 @@ const Category = () => {
                 const api = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${name}`);
                 const data = await api.json();
 
-               // console.log(data);
-               setData(data.meals);
+                // console.log(data);
+                setData(data.meals);
 
                 // console.log(data)
             } catch (error) {
@@ -27,12 +27,12 @@ const Category = () => {
 
     }, [name]);
     if (!data) return <div class="spinner-border m-5" role="status">
-    <span class="visually-hidden">Loading...</span>
-  </div>;
+        <span class="visually-hidden">Loading...</span>
+    </div>;
 
     return (
         <>
-        <Navbar/>
+            <Navbar />
             <div className="mt-4 mx-4">
                 <div className="row ">
                     {data.map((d, index) => (
@@ -51,28 +51,8 @@ const Category = () => {
                     ))}
                 </div>
             </div>
-            <footer class="footer" id='footer'>
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-section about">
-        <h3>About Us</h3>
-        <p>
-          We are a passionate team committed to bringing you the best recipes from around the world. Discover new tastes and culinary adventures with us!
-        </p>
-      </div>
-      <div class="footer-section contact">
-        <h3>Contact Info</h3>
-        <p>Address: 123 Food St, Flavor Town, USA</p>
-        <p>Phone: +1 234 567 8901</p>
-        <p>Email: <a href="mailto:info@foodrecipes.com">info@foodrecipes.com</a></p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Food Recipes. All rights reserved By Mr. Abdulla.</p>
-    </div>
-  </div>
-</footer>
-            </>
+           
+        </>
     )
 }
 

@@ -28,7 +28,7 @@ const Home = () => {
                 <img src={d.strMealThumb} alt={d.strMeal} style={{ width: '100%' }} className="card-img-top" />
                 <div className="card-body p-2 p-sm p-md p-lg">
                   <h5 className="card-title fw-bold fs-6 fs-sm-5 fs-md-4">{d.strMeal}</h5>
-                  <h5 className="card-subtitle mb-2 text-muted fs-6">{d.strArea}</h5>
+                  <h5 className="card-subtitle mb-2 text-muted fs-6">{d.strArea}, {d.strCategory}</h5>
                   <Link to={`/${d.idMeal}`}>
                     <button type="button" className="btn btn-outline-info btn-sm btn-md btn-lg">Recipe</button>
                   </Link>
@@ -38,7 +38,27 @@ const Home = () => {
           ))}
         </div>
       </div>
-     
+      <footer className="footer" id='footer'>
+        <div className="container">
+          <div className="footer-content">
+            <div className="footer-section about">
+              <h3>About Us</h3>
+              <p>
+                We are a passionate team committed to bringing you the best recipes from around the world. Discover new tastes and culinary adventures with us!
+              </p>
+            </div>
+            <div className="footer-section contact">
+              <h3>Contact Info</h3>
+              <p>Address: 123 Food St, Flavor Town, USA</p>
+              <p>Phone: +1 234 567 8901</p>
+              <p>Email: <a href="mailto:info@foodrecipes.com">info@foodrecipes.com</a></p>
+            </div>
+          </div>
+          <div className="footer-bottom">
+            <p>&copy; 2024 Food Recipes. All rights reserved By Mr. Abdulla.</p>
+          </div>
+        </div>
+      </footer>
     </>
   )
 }

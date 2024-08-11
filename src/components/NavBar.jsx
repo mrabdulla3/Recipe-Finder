@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <h1 className="navbar-logo">Racipe Finder</h1>
+        <h1 className="navbar-logo">Recipe Finder</h1>
         <div className="menu-icon" onClick={toggleNavbar}>
           {isOpen ? <FaTimes /> : <FaBars />}
         </div>

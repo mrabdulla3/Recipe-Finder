@@ -40,11 +40,11 @@ const SearchElement = () => {
                         <div key={index} className="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
                             <div className="card">
                                 <img src={d.strMealThumb} alt={d.strMeal} style={{ width: '100%' }} className="card-img-top" />
-                                <div className="card-body">
-                                    <h5 className="card-title fw-bold">{d.strMeal}</h5>
-                                    <h5 className="card-title ">{d.strArea},{d.strCategory}</h5>
+                                <div className="card-body p-2 p-sm p-md p-lg">
+                                    <h5 className="card-title fw-bold fs-6 fs-sm-5 fs-md-4">{d.strMeal}</h5>
+                                    <h5 className="card-subtitle mb-2 text-muted fs-6">{d.strArea},{d.strCategory}</h5>
                                     <Link to={`/${d.idMeal}`}>
-                                        <button type="button" className="btn btn-outline-info">Show Recipe</button>
+                                        <button type="button" className="btn btn-outline-info btn-sm btn-md btn-lg">Show Recipe</button>
                                     </Link>
                                 </div>
                             </div>

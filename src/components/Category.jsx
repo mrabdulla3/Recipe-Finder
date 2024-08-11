@@ -43,7 +43,7 @@ const Category = () => {
                                     <h5 className="card-title fw-bold">{d.strMeal}</h5>
                                     <h5 className="card-title ">{d.strArea},{d.strCategory}</h5>
                                     <Link to={`/${d.idMeal}`}>
-                                        <button type="button" className="btn btn-outline-info">Show Recipe</button>
+                                        <button type="button" className="btn btn-outline-info btn-sm btn-md btn-lg">Recipe</button>
                                     </Link>
                                 </div>
                             </div>
